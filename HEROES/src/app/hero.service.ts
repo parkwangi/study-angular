@@ -20,4 +20,10 @@ export class HeroService {
   /*getHeroes(): Hero[] {      // 서버의 응답을 기다려야하는 동기식처리이다.
     return HEROES;
   }*/
+
+  getHero(id: number): Observable<Hero> {
+    const hero = HEROES.find(h => h.id === id)!;
+    this.messageService.add(`HeroService: fetched hero id=${id}`);
+    return of(hero);             // Observable타입을 반환
+  }
 }

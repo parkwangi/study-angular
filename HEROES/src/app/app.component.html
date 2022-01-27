@@ -1,3 +1,9 @@
 <h1>{{title}}</h1>
-<app-heroes></app-heroes>
+<!--nav 태그는 다른페이지나 현재 페이지의 다른 부분과 연결되는 네비게이션 링크들의 잡합을 정의할때 사용한다.-->
+<nav>
+  <a routerLink="/heroes">Heroes</a>
+  <br>
+  <a routerLink="/dashboard">Dashboard</a>
+</nav>
+<router-outlet></router-outlet>
 <app-messages></app-messages>
