@@ -1,0 +1,6 @@
+<h3>{{english.name}} says:</h3>
+<p>{{tell}}.</p>
+
+<button  (click)="vote(true)"  [disabled]="didVote">Agree</button>        <!--disabled가 true면 버튼이 비활성화 된다.-->
+<button (click)="vote(false)" [disabled]="didVote">Disagree</button>
+

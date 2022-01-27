@@ -1,0 +1,13 @@
+<h2>Hello World</h2>
+<p>This is my first component!</p>
+<!--ngModel지시자를 사용하여 컴포넌트와 템플릿 사이에서 양방향 바인딩이 가능하다.[(ngModel)]은 [ngModel]과 (ngModelChange)의 축약형이다. -->
+<input type="text" placeholder="name" [(ngModel)]="mytext"/>
+<p>Maker : {{mytext}}</p>
+<app-firtst></app-firtst>
+<!--third컴포넌트와 커스텀 양방향 데이터를 이용하여 기본 폰트사이즈를 16으로 정하며, 크기를 조절한다.-->
+<app-third [(size)]="fontSizePx">
+  <p attribute>
+    this is used attribute
+  </p>
+  <p>this is used default attribute</p>
+</app-third>
